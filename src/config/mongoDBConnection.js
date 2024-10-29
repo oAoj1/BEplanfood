@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const mongoose = require('mongoose')
 
-const mongoDbConnection = mongoose.connect('"mongodb+srv://joao:123@cluster0.elloss6.mongodb.net/planfood-colecoes"') 
+mongoose.connect('"mongodb+srv://joao:123@cluster0.elloss6.mongodb.net/planfood-colecoes"') 
 
 const dbConnections = mongoose.connection
 
