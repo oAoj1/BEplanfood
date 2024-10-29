@@ -2,7 +2,12 @@ require('dotenv').config()
 
 const mongoose = require('mongoose')
 
-mongoose.connect('"mongodb+srv://joao:123@cluster0.elloss6.mongodb.net/planfood-colecoes"') 
+mongoose.connect('mongodb+srv://joao:123@cluster0.elloss6.mongodb.net/planfood-colecoes') 
+
+/* mongoose.connect('mongodb://joao:123@host:porta/banco', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+}); */
 
 const dbConnections = mongoose.connection
 
