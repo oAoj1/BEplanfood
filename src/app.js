@@ -52,4 +52,3 @@ dbConnections.once('open', () => {
 dbConnections.on('error', () => {
     console.log('Erro ao conectar com mongodb')
 })
-
