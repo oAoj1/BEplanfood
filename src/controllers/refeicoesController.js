@@ -68,7 +68,7 @@ function formatarDia(dia) {
 
 function ordenarRefeicoes(refeicoes) {
     return refeicoes.sort((a, b) => {
-        return diasSemana.indexOf(a.refeicao) - diasSemana.indexOf(b.refeicao);
+        return todasRefeicoes.indexOf(a.refeicao) - todasRefeicoes.indexOf(b.refeicao);
     });
 }
 
