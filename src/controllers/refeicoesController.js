@@ -47,12 +47,8 @@ function formatarRefeicaoHoras(hora){
         return 'lanche da tarde'
     }
 
-    if(hora >= 18 && hora <= 21){
+    if(hora >= 18 && hora <= 23){
         return 'jantar'
-    }
-
-    if((hora >= 22 && hora <= 23)  || ( hora >= 0 && hora <= 5)){
-        return 'descansar'
     }
 
 }
@@ -72,7 +68,7 @@ function formatarDia(dia) {
 
 function ordenarRefeicoes(refeicoes) {
     return refeicoes.sort((a, b) => {
-        return todasRefeicoes.indexOf(a.refeicao) - todasRefeicoes.indexOf(b.refeicao);
+        return diasSemana.indexOf(a.refeicao) - diasSemana.indexOf(b.refeicao);
     });
 }
 
