@@ -31,7 +31,7 @@ var gruposAlimentos = [
 ]
 
 function formatarRefeicaoHoras(hora){
-    if((hora >= 6 && hora <= 9) || (hora >= 0 && hora <= 5)){
+    if(hora >= 0 && hora <= 9){
         return 'cafe da manha'
     }
 
