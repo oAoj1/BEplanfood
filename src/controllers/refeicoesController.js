@@ -47,7 +47,7 @@ function formatarRefeicaoHoras(hora){
         return 'lanche da tarde'
     }
 
-    if(hora >= 18 && hora <= 23){
+    if((hora >= 18 && hora <= 23) || (hora >= 0 && hora <= 5)){
         return 'jantar'
     }
 
